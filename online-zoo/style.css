@@ -1,11 +1,100 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-ul,li,p{
+ul,li,p,h1,h2{
     margin: 0;
+}
+h2{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 48px;
+line-height: 120%;
+/* or 58px */
+
+
+color: #333B41;
+}
+body{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 140%;
+/* or 22px */
+
+
+color: #333B41;
+
 }
 .wrapper{
     width: 100%;
     max-width: 1600px;
     margin: 0 auto;
+}
+.topSection{
+height: 780px;
+left: 0px;
+right: 0px;
+top: 0px;
+
+background: url(assets/images/Giant\ Panda1.png);
+background-repeat: no-repeat;
+}
+.cycle{
+    position: absolute;
+width: 465px;
+height: 465px;
+left: calc(50% - 465px/2 + 239.5px);
+top: 92px;
+clip-path: circle(50%);
+/* orange */
+
+background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+}
+.topSection>p{
+    position: absolute;
+width: 500.31px;
+height: 400px;
+left: calc(50% - 500.31px/2 + 330.15px);
+top: 166px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 106.496px;
+line-height: 75%;
+/* or 80px */
+
+text-align: center;
+text-transform: uppercase;
+
+color: #FFFFFF;
+}
+.topSection>p>span{
+    color: #FFEE2E;
+}
+.btn{
+    position: absolute;
+    width: 298px;
+    height: 54px;
+    left: calc(50% - 298px/2 + 332px);
+    top: 626px;
+    
+    /* orange */
+    
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    border-radius: 25px;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 140%;
+/* or 22px */
+
+text-align: center;
+text-transform: uppercase;
+
+color: #FFFFFF;
+
 }
 header{
     display: flex;
@@ -84,4 +173,53 @@ nav{
 nav>ul{
     display: flex;
     grid-gap:58px;
+}
+.secondSection{
+display: flex;
+width: 1600px;
+}
+.secondSection__inner{
+    margin-top: 140px;
+    margin-left: 219px;
+    display: flex;
+    width: 1161px;
+    height: 403px;
+}
+.secondSection__inner__img{
+    height: 403px;
+    min-width: 609px;
+    width: 100%;
+    background: url('assets/images/bamboo-cap1.png');
+    background-repeat: no-repeat;
+    backdrop-filter: blur(2px);
+}
+.secondSection h2, 
+.secondSection p,
+.secondSection .subtitle{
+
+    margin-left: 87px;
+}
+.secondSection h2{
+    margin-bottom: 20px;
+}
+.secondSection .subtitle{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 120%;
+margin-top: 54px;
+margin-bottom: 34px;
+/* identical to box height, or 29px */
+
+
+color: #333B41;
+}
+.right_flower{
+    background: url(assets/images/flower_foto11.png);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+margin-left: 20px;
+width: 293px;
+height: 605px;
+background-repeat: no-repeat;
 }
