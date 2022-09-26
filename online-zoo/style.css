@@ -2,7 +2,7 @@
 div,ul,li,p,h1,h2,section{
     margin: 0;
 }
-html{ line-height: 0;}
+html{ line-height: 1;}
 h2{
     font-family: 'Roboto';
 font-style: normal;
@@ -73,6 +73,13 @@ color: #FFFFFF;
 }
 .topSection>p>span{
     color: #FFEE2E;
+}
+.topSection>button{
+    position: absolute;
+width: 298px;
+height: 54px;
+left: calc(50% - 298px/2 + 332px);
+top: 626px;
 }
 .btn{
     
@@ -381,9 +388,12 @@ line-height: 130%;
 margin-left: 99px;
 margin-bottom: 10px;
 /* or 21px */
-
+        
 
 color: #333B41;
+    }
+    .sec4__inner>button{
+          margin-left: 431px;  
     }
 
     h3{
@@ -421,4 +431,69 @@ color: #333B41;
     }
     .works__arrow{
         margin-top: 66.5px;
+    }
+    .sec5{
+        margin-top: 140px;
+        width: 1600px;
+        height: 575px;
+    }
+   
+    .sec5__inner{
+        margin-top: 94px;
+        margin-right: 220px;
+        margin-left: 220px;
+        width: 268px;
+        display: flex;
+        grid-gap: 30px;
+        width: 1160px;
+
+    }
+    .sec5__block{
+    
+
+background: #F1F3F2;
+border-radius: 20px;
+width: 268px;
+height: 391px;
+
+    }
+    .sec5__block__inner{
+        display: flex;
+        padding-top: 15px;
+        margin-left: 16px;
+        margin-right: 15px;
+        margin-bottom: 11px;
+    }
+    .info{
+        margin-left: 10px;
+    }
+    .name{
+        height: 19px;
+    }
+    .local{
+        height: 18px;
+        color: #767474;
+    }
+    .sec5__text{
+        margin-left: 16px;
+        margin-right: 15px;
+        margin-bottom: 19px;
+        line-height: 120%;
+        color: #767474;
+        font-family: 'Roboto';
+font-style: normal;
+font-weight: 300;
+font-size: 15px;
+    }
+    .scroll{
+        margin: 0 auto;
+        margin-top: 21px;
+        width: 599px;
+        height: 8px;
+        background-color: #F5F7F6;
+    }
+    .progress{
+        width: 30%;
+    background-color: #FE9013;
+    height: 7px;
     }
