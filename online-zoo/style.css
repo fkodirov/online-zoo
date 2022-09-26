@@ -80,6 +80,7 @@ width: 298px;
 height: 54px;
 left: calc(50% - 298px/2 + 332px);
 top: 626px;
+    cursor: pointer;
 }
 .btn{
     
@@ -247,7 +248,7 @@ position: absolute;
     flex-wrap: wrap;
     width: 1554px;
 }
-.card{
+.card{cursor: pointer;
     box-sizing: border-box;
 width: 366px;
 height: 426px;
@@ -299,6 +300,7 @@ color: #000000;
 height: 54px;
 background: #FE9013;
 border-radius: 25px;
+cursor: pointer;
 }
 .btn{
     font-family: 'Roboto';
@@ -306,6 +308,7 @@ font-style: normal;
 font-weight: 500;
 font-size: 16px;
 line-height: 140%;
+cursor: pointer;
 /* or 22px */
 
 text-align: center;
@@ -496,4 +499,29 @@ font-size: 15px;
         width: 30%;
     background-color: #FE9013;
     height: 7px;
+    }
+    .leave{
+        position: absolute;
+width: 300.92px;
+height: 295.45px;
+left: 1353.67px;
+    top: 4311.88px;
+
+background: url(assets/images/leav_foto.png);
+background-repeat: no-repeat;
+    }
+    .secLast{
+        width: 1600px;
+        height: 443px;
+        background-color: #000000;
+        margin-top: 180px;
+    }
+    .secLast>img{
+        position: absolute;
+height: 443px;
+left: 0px;
+right: 0px;
+bottom: 0px;
+
+background: #111115;
     }
