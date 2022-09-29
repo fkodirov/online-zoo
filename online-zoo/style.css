@@ -185,7 +185,7 @@ header>div {
     top: 29px;
 }
 
-header a, .menu__buttom a,
+button>a,header a, .menu__buttom a,
 header>div>span, .menu__buttom>div>span {
     color: #FFFFFF;
     font-family: 'Roboto', sans-serif;
@@ -539,6 +539,7 @@ h3 {
     margin-top: 140px;
     width: 1600px;
     height: 575px;
+    margin-bottom: 180px;
 }
 
 .sec5__inner {
@@ -624,7 +625,6 @@ h3 {
     width: 1600px;
     height: 443px;
     background-color: #000000;
-    margin-top: 180px;
     position: relative;
 }
 
