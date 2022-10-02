@@ -436,6 +436,9 @@ nav>ul {
     background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
     opacity: 0.9;
 }
+.sec4 h3{
+    margin-top: 60px;
+}
 
 .sec4__inner {
      margin-left: 220px;
@@ -500,7 +503,6 @@ nav>ul {
 }
 
 h3 {
-    margin-top: 60px;
     text-align: center;
     font-family: 'Roboto';
     font-style: normal;
@@ -541,22 +543,24 @@ h3 {
 }
 
 .sec5 {
-    margin-top: 140px;
-    margin-bottom: 180px;
+    height: 919px;
     width: 1600px;
-    background: url(assets/images/leav_foto.png) right bottom;
+    background: url(assets/images/leav_foto.png) right 645px;
     background-repeat: no-repeat;
 }
 
 .sec5__inner {
+    padding-top: 140px;
+
+}
+.sec5__blocks{
     margin-top: 47px;
     margin-right: 220px;
     margin-left: 220px;
     width: 268px;
     display: flex;
     grid-gap: 30px;
-    width: 1160px;
-
+    width: 1160px;   
 }
 
 .sec5__block {
