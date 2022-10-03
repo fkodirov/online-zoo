@@ -222,6 +222,13 @@ nav>ul {
 .secondSection {
     display: flex;
     width: 1600px;
+    height: 723px;
+    background: url(assets/images/flower_foto11.png);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background-repeat: no-repeat;
+    background-position: right 12px;
+    z-index: 1;
+
 }
 
 .secondSection__inner {
@@ -285,7 +292,6 @@ nav>ul {
 
 .sec3__inner {
     width: 1158px;
-    margin-top: 180px;
     margin-left: 220px;
     display: flex;
     grid-gap: 20px 30px;
@@ -909,6 +915,9 @@ color: #FFFFFF;
     .logo{
         left: 30px;
     }
+    .logo__inner {
+        height: 52px;
+    }
     .menu{
         margin-left: 175px;
     }
@@ -949,6 +958,7 @@ color: #FFFFFF;
     .secondSection {
         width: 1000px;
         height: 527px;
+        background: none;
     }
     .secondSection__inner {
         margin-top: 100px;
