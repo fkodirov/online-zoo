@@ -1,6 +1,8 @@
 
 .bg{
-    background: url(assets/images/panda_bg.png);
+    background: url(assets/images/57264b2f4b1b531011085ffaba7f584e.jpg);
+    background-size: 1600px;
+    background-position: 0px -342px;
     background-repeat: no-repeat;
     height:  386px;;
 }
@@ -273,7 +275,9 @@ margin-top: 30.02px;
 
 @media (max-width: 1000px) {
 .bg{
+    width: 1000px;
     height: 390px;
+    background-size: 1600px;
     background-position: -172px;
 }
 .donate-content {
@@ -325,7 +329,7 @@ margin-top: 30.02px;
 .progress-bar-bg {
     width: 810px;
 }
-.line {
+.bar-line {
     width: 785px;
     left: 14px;
 }
@@ -371,8 +375,293 @@ input[type='email'] {
 .bottom_text {
     left: 741px;
 }
-
-
-
+}
+@media (max-width: 640px) {
+.bg{
+    width: 640px;
+    height: 335px;
+    background-size: 1373px;
+    background-position: -272px;
+}
+.donate-content {
+    height: 1333px;
+    width: 640px;
+}
+.donate-content-title {
+    padding-top: 29px;
+    margin-left: 20px;
+    width: 600px;
+    font-style: 'Regular';
+    font-size: 24px;
+}
+.donate-content-text {
+    padding-top: 22px;
+    margin-left: 20px;
+    width: 600px;
+}
+.donate-info {
+    margin-left: 20px;
+    margin-top: 90px;
+}
+.donate__inner {
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 600px;
+}
+.donate__inner__title{
+    padding-top: 29px;
+    margin-left: 69px;
+}
+.donate__inner__text {
+    margin-top: 21px;
+    width: 600px;
+    margin-left: 0;
+    text-align: center;
+}
+.four{
+    margin-left: 27px;
+    margin-top: -8px;
+}
+.amount {
+    margin-left: 10px;
+    margin-top: 35px;
+}
+.progress-bar{
+    width: 600px;
+    margin-top: 1px;
+    margin-left: 0;
+}
+.progress-bar-bg{
+    width: 600px;
+}
+.bar-line {
+    width: 524px;
+    margin-left: 30px;
+    
+}
+.dot-blocks{
+    grid-gap: 112px;
+    margin-left: 30px;
+}
+.dot-block:nth-last-of-type(n+3){
+display: none;
+}
+.price-blocks {
+    margin-top: 6px;
+    margin-left: 15px;
+    width: 570px;
+    grid-gap: 73px;
+}
+.price-block:nth-child(-n+3){
+    display: none;
+}
+.price-block:nth-of-type(6){
+    margin-left: -4px;
+}
+input[type="text"]{
+    margin-left: 210px;
+    padding: 0px 0 15px 5px;
+    width: 173px;
+    margin-top: 50px;
+}
+input[type="text"]::placeholder{
+    width: 173px;
 
 }
+.radio__button{
+    margin-top: 33px;
+    margin-left: 142px;
+}
+.donate-content button{
+    margin-left: 154px;
+}
+.share {
+    margin-left: 150px;
+}
+.logo__bottom, .donate {
+    left:21px;
+}
+.bottom_text{
+    left: 392px;
+}
+.socials{
+    left: 594px;
+}
+}
+
+@media (max-width: 320px) {
+    .bg{
+        width: 320px;
+        height: 187px;
+        background-size: 766.42px;
+        background-position: -149px;
+    }
+    .donate-content {
+        height: 1146px;
+        width: 320px;
+    }
+    .donate-content-title {
+        padding-top: 30px;
+        margin-left: 10px;
+        width: 300px;
+        font-size: 24px;
+        line-height: 120%;
+    }
+    .donate-content-text {
+        padding-top: 48px;
+        margin-left: 10px;
+        width: 300px;
+        height: 308px;
+        line-height: 138%;
+    }
+    .donate-info {
+        margin-left: 10px;
+        margin-top: 32px;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 120%;
+    }
+    .donate__inner {
+        margin-top: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 300px;
+        height: 591px;
+    }
+    .donate__inner__title{
+        width: 232px;
+        height: 29px;
+        font-size: 24px;
+        line-height: 120%;
+        padding-top: 20px;
+    margin-left: 34px;
+    }
+    .donate__inner__text {
+        font-size: 16px;
+        width: 300px;
+        height: 44px;
+        margin-top: 10px;
+        width: 300px;
+        margin-left: 0;
+        text-align: center;
+        line-height: 136%;
+    }
+    .four{
+        width: 300px;
+        height: 138.72px;
+        margin-left: 0;
+        margin-top: 9.28px;
+    }
+    .four__block1 {
+        margin-top: 34px;
+    }
+    .big-number{
+        font-size: 40px;
+    line-height: 80%;
+    }
+    .four__block1__text {
+        margin-top: 7px;
+        width: 89.66px;
+        height: 12.41px;
+        font-size: 9.02255px;
+    }
+    .four__block2 {
+        margin-left: 6px;
+        margin-top: 16px;
+    }
+    .four__block2>img{
+        width: 10px;
+        height: 10px;
+    }
+    .four__block3{
+        margin-left: 36px;
+        margin-top: 6px;
+    }
+    .four__block3>img{
+        width: 160.15px;
+        height: 138.72px;
+    }
+    .amount {
+        margin-left: 0;
+        margin-top: 4px;
+    }
+    .progress-bar{
+        width: 300px;
+        height: 20px;
+        margin-top: 6px;
+        margin-left: 0;
+    }
+    .progress-bar-bg{
+        width: 300px;
+        height: 13.5px;
+    }
+    .bar-line {
+        width: 260px;
+        margin-left: 6px;
+        top: 6px;  
+    }
+    .dot-blocks{
+        height: 8px;
+        grid-gap: 52px;
+        margin-left: 13px;
+    }
+    .dot-block>input[type="radio"] {
+        width: 5px;
+        height: 5px;
+    }
+    .dot-block:nth-last-of-type(-n+5){
+    display: block;
+    }
+    .price-blocks {
+        width: 285px;
+        height: 18px;
+        margin-top: 3px;
+        margin-left: 7px;
+        width: 285px;
+        grid-gap: 38px;
+    }
+    .price-block {
+        font-size: 13px;
+    }
+    .price-block:nth-child(-n+3){
+        display: none;
+    }
+    .price-block:nth-of-type(6){
+        margin-left: -4px;
+    }
+    input[type="text"]{
+        margin-left: 61px;
+        padding: 0px 0 15px 5px;
+        width: 173px;
+        margin-top: 26px;
+    }
+    input[type="text"]::placeholder{
+        width: 173px;
+    
+    }
+    .radio__button{
+        margin-top: 26px;
+        margin-left: -9px;
+    }
+    .donate-content button{
+        margin-left: 3px;
+        margin-top: 28px;
+    }
+    .share {
+        margin-left: -0.4px;
+    }
+    .logo__bottom {
+        left:96px;
+    }
+    .donate{
+        left: 9px;
+        top: 129px;
+    }
+    .bottom_text{
+        left: 96px;
+    }
+    .socials{
+        left: 63px;
+    }
+    }
