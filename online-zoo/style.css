@@ -693,7 +693,7 @@ height: 6px;
     top: 41px;
 }
 
-.logo__botoon__inner {
+.logo__bottom__inner {
     box-sizing: border-box;
     border: 1px solid #FFFFFF;
     border-radius: 2px;
@@ -731,7 +731,7 @@ height: 6px;
     color: #FFFFFF;
     text-decoration: none;
 }
-.logo__botoon__inner>img {
+.logo__bottom__inner>img {
     position: absolute;
     width: 7.03px;
     height: 20.98px;
@@ -1462,6 +1462,322 @@ height: 29.03px;
         top: 216px;
         left: 391px;
     }
+ }
+ @media (max-width: 320px) {
+    .wrapper {
+        max-width: 320px;
+    }
+    header{
+        width: 320px;
+        height: 34px;
+
+    }
+    .logo{
+        left: 10.07px;
+        top: 3px;
+    }
+    .logo__inner{
+        border: none;
+    }
+
+    .menu {
+        display: none;
+    }
+    .burger-lines{
+        top: 11px;
+        left: 292px;
+    }
+    .line {
+        display: block;
+        height: 2px;
+        width: 100%;
+        margin-bottom: 2.5px;
+        background: #FFFFFF;
+    }
+    .fav-animal {
+        background-position: -32px -35px;
+        background-size: 384px;
+        width: 3200px;
+        height: 187px;
+    }
+    .cycle{
+        width: 119.09px;
+        height: 119.09px;
+        left: 163px;
+        top: 22px;
+    }
+    .fav-animal>p{
+        font-size: 28px;
+        left: 181.29px;
+        top: 41.04px;
+        width: 128.13px;
+        height: 102.44px;
+    }
+    .fav-animal>button {
+        left: 13.21px;
+        top: 207px;
+    }
+    .secondSection {
+        width: 320px;
+        height: 532.08px;
+        background: url(assets/images/flower_foto1_320.png);
+        background-position: right 38px;
+        background-repeat: no-repeat;
+
+    }
+    .secondSection__inner {
+        margin-top: 104px;
+        margin-left: 12px;
+    }
+    .secondSection__inner__img {
+        display: none;
+    }
+    .secondSection__inner__text{
+        width: 300px;
+        margin-left: 0;
+    }
+    .text__works{
+        line-height: 137%;
+        width: 300px;
+        margin-left: -2px;
+    }
+    .secondSection h2{
+        margin-left: -2px;
+        font-size: 24px;
+        margin-bottom: 8px;
+    }
+    .secondSection .subtitle {
+        margin-top: 19px;
+        margin-left: 0px;
+        margin-bottom: 9px;
+    }
+    .sec3{
+        height: 1522px;
+        width: 320px;
+        background-size: 138px 72px, 85px 71px;
+        background-position-x: -80px, 253px;
+        background-position-y: 1450px,1454px;
+    }
+    .sec3__inner {
+        width: 285.24px;
+        margin-top: 0px;
+        margin-left: 10px;
+        grid-gap: 20px 0;
+    }
+    .card_bottom {
+        grid-gap: 21px;
+    }
+    .sec3__inner::before {
+        display: none;
+    }
+    .sec3__inner::after {
+        display: none;
+    }
+    .card:nth-of-type(4){
+        display: none;
+    }
+    .card:nth-of-type(8){
+        display: none;
+    }
+    .card:nth-of-type(6){
+        display: none;
+    }
+    .card:nth-of-type(7){
+        display: none;
+    }
+    .btn1 {
+        margin-left: 12px;
+        margin-top: 20px;
+    }
+    .sec4 {
+        padding-top: 20px;
+        padding-bottom: 21px;
+        width: 320px;
+    }
+    .sec4__inner{
+        margin: 0;
+        height: 1041px;
+        width: 300px;
+        margin-left: 10px;
+    }
+    .sec4__title{
+        padding-top: 20px;
+        font-size: 24px;
+        margin-left: 0px;
+    }
+    .sec4 .subtitle {
+        width: 297px;
+        height: 66px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        margin-left: 0px;
+        font-size: 18px;
+        text-align: center;
+    }
+    .sec4__text {
+        display: none;
+    }
+    .sec4 h3 {
+        margin-top: 0px;
+        font-size: 24px;
+    }
+    .works {
+        margin-left: 65px;
+        margin-top: 18px;
+        width: 168px;
+        flex-wrap: wrap;
+        position: relative;
+        grid-gap:21px;
+        
+    }
+    .works__block{
+        height: auto;
+    }
+    .works__img{
+        width: 166px;
+        height: 166px;
+    }
+    .works__block>.works__title{
+        margin-top: 9px;
+        width: 168px;
+        height: 44px;
+        margin-bottom: 9px;
+    }
+    .works__block>.works__title:first-child{
+        margin-bottom: 0px;
+    }
+    .works::before{
+        top: 161px;
+        left: 133px;
+        rotate: 85deg;
+    }
+    .works::after{
+        top: 409px;
+        left: 133px;
+        rotate: 85deg;
+    }
+    .works__block:nth-of-type(2){
+        display: none;
+    }
+    .works__block:nth-of-type(4){
+        display: none;
+    }
+    .sec4__inner>button {
+        margin-left: 0;
+        margin-top: 31px;
+    }
+    .sec4__inner>button>span {
+        margin-left: 4px;
+    }
+
+    
+
+    .sec5 {
+        height: 580px;
+        width: 320px;
+        background: url(assets/images/leav_foto_320.png);
+        background-position: right 516px;
+        background-repeat: no-repeat;
+    }
+    .sec5__inner {
+        padding-top: 29px;
+    }
+    .sec5 h3{
+        font-size: 24px;
+    }
+    .info {
+        margin-left: 6px;
+    }
+    .sec5__blocks{
+        margin-top: 15px;
+        margin-left: 13px;
+        width: 299px;
+        display: block;
+    }
+    .sec5__block{
+        width: 299px;
+        height: 109px;
+        margin-bottom: 15px;
+    }
+    .sec5__block:nth-of-type(4){
+        display: none;
+    }
+    .sec5__block__inner{
+        margin-left: 10px;
+    }
+    .sec5__text{
+        height: 38px;
+        overflow: hidden;
+    }
+    .scroll{
+        display: none;
+    }
+    .sec5 button {
+        margin-top: 19px;
+        margin-left: 40px;
+    }
+
+    .secLast {
+        width: 320px;
+        height: 334px;
+    }
+    
+    .logo__bottom {
+        left: 96px;
+        top: 20px;
+        width: 128px;
+        height: 23px;
+    }
+    .logo__bottom__inner {
+        border: none;
+    }
+    .logo__bottom__inner>img{
+        width: 15.03px;
+        height: 20.98px;
+        left: 70.23px;
+        top: -3.36px;
+    }
+    .secLast .subtitle {
+        display: none;
+    }
+    .mail{
+        display: none;
+    }
+    .donate {
+        left: 9px;
+        top: 128px;
+    }
+    .socials {
+        left: 63px;
+        top: 72px;
+        display: flex;
+        grid-gap: 30px;
+    }
+    .social__text {
+        display: none;
+    }
+    .social__img {
+        margin-bottom: 20px;
+    }
+    .menu__buttom {
+        padding-top: 291px;
+    }
+    .menu__buttom>ul {
+        grid-gap: 31px;
+    }
+    .bottom_text {
+        top: 213px;
+        left: 96px;
+    }
+    .bottom_text p{
+        font-weight: 100;
+        font-size: 15px;
+        line-height: 120%;
+        color: #FFFFFF;
+        padding-bottom: 2px;
+    }
+
+
 
 
 
