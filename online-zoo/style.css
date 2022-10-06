@@ -155,6 +155,7 @@ header {
     box-sizing: border-box;
     border: 1px solid #FFFFFF;
     border-radius: 2px;
+    height: 52px;
 }
 
 .logo__inner>img {
@@ -705,6 +706,7 @@ height: 6px;
     box-sizing: border-box;
     border: 1px solid #FFFFFF;
     border-radius: 2px;
+    height: 52px;
 }
 
 .logo__inner>img {
@@ -1232,7 +1234,7 @@ color: #FFFFFF;
         left: 44px;
     }
     .menu__buttom {
-        margin-left: 334px;
+        margin-left: 33.4%;
     }
     .menu__buttom>ul {
         grid-gap: 48px;
