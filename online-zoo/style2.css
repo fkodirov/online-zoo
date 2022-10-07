@@ -215,19 +215,27 @@ input[type="text"]{
 }
 input[type="text"]::placeholder{
     font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 140%;
-/* or 22px */
-
-
-color: #929699;
-position: absolute;
-left: 3.36%;
-right: 53.36%;
-top: 29.63%;
-bottom: 29.63%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #929699;
+    position: relative;
+    left: 1.7%;
+    top: 40%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+input[type="text"]::after{
+    content:"$";
+    position: absolute;
+    color: #929699;
+    font-size: 22px;
+    font-weight: 500;
+    right: 9px;
+    top: 40%;
+    transform: translateY(-50%);
+    z-index: 2;
 }
 .radio__button{
     margin-top: 23px;
@@ -938,9 +946,10 @@ input[type="text"]::placeholder{
         padding: 0px 0 15px 5px;
         width: 173px;
         margin-top: 26px;
+        height: 22px;
     }
     input[type="text"]::placeholder{
-        width: 173px;
+        width: 180px;
     
     }
     .radio__button{
