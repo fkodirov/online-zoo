@@ -197,8 +197,25 @@ margin-top: 44px;
 
 color: #333B41;
 }
+
 .price-block::before{
     content: "$";
+}
+.input-block{
+    width: fit-content;
+    margin: 50px auto 0 auto; 
+    position: relative;
+}
+.input-block::after{
+    content: '$';
+    position: absolute;
+    right: 3%;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #929699;
+    font-size: 22px;
+    font-family: 'Roboto';
+    font-weight: 500;
 }
 input[type="text"]{
         border-radius: 2px;
@@ -211,7 +228,6 @@ input[type="text"]{
         display: block;
         width: 260px;
         height: 22px;
-        margin: 50px auto 0 auto;
 }
 input[type="text"]::placeholder{
     font-family: 'Roboto';
@@ -500,13 +516,18 @@ input[type='email'] {
     .price-block:nth-of-type(6){
         margin-left: -4px;
     }
+    .input-block{
+        margin: 0 auto; 
+    }
     input[type="text"]{
         padding: 0px 0 15px 5px;
         width: 173px;
         margin-top: 50px;
+        height: 21px;
     }
     input[type="text"]::placeholder{
         width: 173px;
+        top: 80%;
     
     }
     .radio__button{
@@ -601,9 +622,9 @@ display: block;
     margin-left: -4px;
 }
 input[type="text"]{
-    margin-left: 210px;
     padding: 0px 0 15px 5px;
     width: 173px;
+    height: 21px;
     margin-top: 50px;
 }
 input[type="text"]::placeholder{
@@ -942,7 +963,6 @@ input[type="text"]::placeholder{
         margin-left: -4px;
     }
     input[type="text"]{
-        margin-left: 61px;
         padding: 0px 0 15px 5px;
         width: 173px;
         margin-top: 26px;

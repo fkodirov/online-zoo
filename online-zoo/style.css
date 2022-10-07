@@ -753,7 +753,7 @@ height: 6px;
     position: absolute;
     width: 237px;
     height: 29px;
-    right: 21.9%;
+    right: 350px;
     top: 40px;
     
     /* subtitle */
@@ -772,7 +772,7 @@ input[type='email']{
     position: absolute;
     width: 228px;
     height: 42px;
-    right: 22.5%;
+    right: 359px;
     top: 83px;
     box-sizing: border-box;
     border-radius: 2px;
@@ -801,7 +801,7 @@ color: #BDBDBD;
     position: absolute;
 width: 129px;
 height: 42px;
-right: 13.8%;
+right: 220px;
 top: 83px;
 background: #F1F3F2;
 /* Green */
@@ -1374,7 +1374,7 @@ color: #FFFFFF;
     .card_subtitle {
         margin-left: 12px;
         margin-top: -1px;
-        width: 294px;
+        width: 220px;
         height: 14px;
         font-size: 11.6901px;
     }
@@ -1629,7 +1629,7 @@ color: #FFFFFF;
     .card_subtitle {
         margin-left: 12px;
         margin-top: -1px;
-        width: 294px;
+        width: 220px;
         height: 14px;
         font-size: 11.6901px;
     }
