@@ -1,3 +1,6 @@
+.orange{
+    color:#FE9013;
+}
 
 .bg{
     background: url(assets/images/57264b2f4b1b531011085ffaba7f584e.jpg);
@@ -136,6 +139,7 @@ margin-top: 44px;
     height: 40px;
     display: flex;
     align-items: center;
+    overflow: hidden;
 }
 .progress-bar-bg{
     background: #404950;
@@ -152,6 +156,7 @@ margin-top: 44px;
     top: 12px;
     background: #72828E;
 }
+
 .dot-blocks{
     display: flex;
     grid-gap: 112px;
@@ -172,8 +177,16 @@ margin-top: 44px;
     position: relative;
     z-index: 1;
 }
-.dot-block>input[type="radio"]:checked {
-    background: #FE9013
+.dot-block>input[type="radio"]:checked::after {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background: url(assets/images/roller_icon1.svg);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .price-blocks{
     margin-left: 89px;
@@ -217,7 +230,7 @@ color: #333B41;
     font-family: 'Roboto';
     font-weight: 500;
 }
-input[type="text"]{
+input[type="number"]{
         border-radius: 2px;
         font-family: 'Roboto Light';
         font-size: 16px;
@@ -229,7 +242,7 @@ input[type="text"]{
         width: 260px;
         height: 22px;
 }
-input[type="text"]::placeholder{
+input[type="number"]::placeholder{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -242,7 +255,7 @@ input[type="text"]::placeholder{
     transform: translateY(-50%);
     z-index: 1;
 }
-input[type="text"]::after{
+input[type="number"]::after{
     content:"$";
     position: absolute;
     color: #929699;
@@ -410,7 +423,7 @@ height: 16px;
 .dot-block:first-of-type{
     display: none;
 }
-input[type="text"]{
+input[type="number"]{
     width: 261px;
     height: 21px;
 }
@@ -493,15 +506,15 @@ input[type='email'] {
     }
     .dot-blocks{
         grid-gap: 112px;
-        margin-left: 30px;
+        margin-left: -355px;
         width: fit-content;
     }
     .dot-block:nth-last-of-type(n+3){
     display: block;
     }
-    .dot-block:nth-child(7),.dot-block:nth-child(6),.dot-block:nth-child(8){
+    /*.dot-block:nth-child(7),.dot-block:nth-child(6),.dot-block:nth-child(8){
         display: none;
-        }
+        }*/
     .price-blocks {
         margin: 6px auto 0 auto;
         width: 570px;
@@ -519,13 +532,13 @@ input[type='email'] {
     .input-block{
         margin: 0 auto; 
     }
-    input[type="text"]{
+    input[type="number"]{
         padding: 0px 0 15px 5px;
         width: 173px;
         margin-top: 50px;
         height: 21px;
     }
-    input[type="text"]::placeholder{
+    input[type="number"]::placeholder{
         width: 173px;
         top: 80%;
     
@@ -590,6 +603,7 @@ input[type='email'] {
 }
 .progress-bar-bg{
     width: 600px;
+    overflow: hidden;
 }
 .bar-line {
     width: 520px;
@@ -598,15 +612,15 @@ input[type='email'] {
 }
 .dot-blocks{
     grid-gap: 112px;
-    margin-left: 30px;
+    margin-left: -360px;
     width: fit-content;
 }
 .dot-block:nth-last-of-type(n+3){
 display: block;
 }
-.dot-block:nth-child(7),.dot-block:nth-child(6){
+/*.dot-block:nth-child(7),.dot-block:nth-child(6){
     display: none;
-    }
+    }*/
 .price-blocks {
     margin-top: 0;
     width: 570px;
@@ -621,13 +635,13 @@ display: block;
 .price-block:nth-of-type(6){
     margin-left: -4px;
 }
-input[type="text"]{
+input[type="number"]{
     padding: 0px 0 15px 5px;
     width: 173px;
     height: 21px;
     margin-top: 50px;
 }
-input[type="text"]::placeholder{
+input[type="number"]::placeholder{
     width: 173px;
 
 }
@@ -780,13 +794,13 @@ input[type="text"]::placeholder{
     .price-block:nth-of-type(6){
         margin-left: -4px;
     }
-    input[type="text"]{
+    input[type="number"]{
         margin-left: auto;
         padding: 0px 0 15px 5px;
         width: 173px;
         margin-top: 26px;
     }
-    input[type="text"]::placeholder{
+    input[type="number"]::placeholder{
         width: 173px;
     
     }
@@ -933,7 +947,7 @@ input[type="text"]::placeholder{
     .dot-blocks{
         height: 8px;
         grid-gap: 52px;
-        margin-left: 13px;
+        margin-left: -182px;
     }
     .dot-block>input[type="radio"] {
         width: 5px;
@@ -942,9 +956,7 @@ input[type="text"]::placeholder{
     .dot-block:nth-last-of-type(-n+5){
     display: block;
     }
-    .dot-block:nth-child(8),.dot-block:nth-child(7),.dot-block:nth-child(6){
-        display: none;
-        }
+    
     .price-blocks {
         width: 285px;
         height: 18px;
@@ -962,16 +974,21 @@ input[type="text"]::placeholder{
     .price-block:nth-of-type(6){
         margin-left: -4px;
     }
-    input[type="text"]{
+    input[type="number"]{
         padding: 0px 0 15px 5px;
         width: 173px;
         margin-top: 26px;
         height: 22px;
     }
-    input[type="text"]::placeholder{
+    input[type="number"]::placeholder{
         width: 180px;
     
     }
+    .dot-block>input[type="radio"]:checked::after{
+        width: 20px;
+        height: 20px;
+    background-size: 20px;
+    background-repeat: no-repeat;}
     .radio__button{
         margin-top: 26px;
         margin-left: -9px;

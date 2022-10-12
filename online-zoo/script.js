@@ -1,3 +1,30 @@
+//burger
+const burger=document.getElementsByClassName("burger-lines")[0];
+burger.addEventListener('click', ()=>{
+    document.getElementsByTagName('header')[0].classList.add('active');
+    document.querySelector('.pop-up-container').style.display='block';
+});
+const closemenu=document.getElementsByClassName("close-menu")[0];
+closemenu.addEventListener('click', ()=>{
+    document.getElementsByTagName('header')[0].classList.remove('active');
+    document.querySelector('.pop-up-container').style.display='none';
+});
+
+
+
+//range
+const selectElement=document.querySelector(".range");
+const sec5blocks=document.querySelector(".sec5__blocks");
+sec5blocks.style.setProperty('transition', '2s ease-in-out');
+selectElement.addEventListener('change', (e)=>{
+    let x;
+if(document.documentElement.clientWidth> 1400){ x=-297;}
+else if(document.documentElement.clientWidth<= 1400 && document.documentElement.clientWidth>=999){x=-323;}
+sec5blocks.style.setProperty('transform', `translateX(${e.target.value*(x)}px)`);
+});
+
+
+
 //carousel
 const left=document.getElementById('left');
 const right=document.getElementById('right');
@@ -90,24 +117,45 @@ right.addEventListener('touchend', slideright, false);
 
 //pop up
 const popupcontainer=document.querySelector('.pop-up-container');
-const target = document.getElementsByClassName('sec5__block')[0];
-const clonedTarget = target.cloneNode(true);
+const popupblock = document.getElementsByClassName('pop-up-block')[0];
+const sec5block = document.querySelectorAll(".sec5__blocks>.sec5__block");
+const close = document.getElementsByClassName('close')[0];
 
-document.getElementById("qwerty").appendChild((clonedTarget));
-document.querySelector('.pop-up-block>.sec5__block').style.display='block';
-document.querySelector('.pop-up-block>.sec5__block').style.margin='20px 36px 17px 17px';
-document.querySelector('.pop-up-block>.sec5__block').style.width='267px';
-document.querySelector('.pop-up-block>.sec5__block').style.height='391px';
-document.querySelector('.pop-up-block .sec5__text').style.overflow='visible';
+//const target = document.getElementsByClassName('sec5__block')[1];
+//const clonedTarget = target.cloneNode(true);
+//popupblock.appendChild((clonedTarget));
 
-const sec5blocks = document.querySelectorAll(".sec5__blocks .sec5__block");
-
- for (let i = 0; i < sec5blocks.length; i++) {
-    sec5blocks[i].addEventListener("click", function() {
+ for (let i = 0; i < sec5block.length; i++) {
+    sec5block[i].addEventListener("click", function(e) {
+        const target = e.target.closest(".sec5__block");
+        console.log(target);
+        const clonedTarget = target.cloneNode(true);
+        popupblock.appendChild((clonedTarget));
+        document.querySelector('.pop-up-block>.sec5__block').style.display='block';
+        document.querySelector('.pop-up-block>.sec5__block').style.margin='20px 36px 17px 17px';
+        document.querySelector('.pop-up-block>.sec5__block').style.width='267px';
+        document.querySelector('.pop-up-block>.sec5__block').style.height='391px';
+        document.querySelector('.pop-up-block .sec5__text').style.overflow='visible';
         popupcontainer.style.display='flex';
+        popupblock.style.display='flex';
      });
  }
- const popupblock = document.querySelector("pop-up-block");
+ //close
+ popupcontainer.addEventListener("click", function() {
+    if(document.getElementsByTagName('header')[0].className=='active'){
+        document.getElementsByTagName('header')[0].classList.remove('active');
+        document.querySelector('.pop-up-container').style.display='none';
+    }
+    else{
+    popupcontainer.style.display='none';
+    popupblock.style.display='none';
+    document.querySelector('.pop-up-block .sec5__block').remove();}
+ });
+ close.addEventListener("click", function() {
+    popupcontainer.style.display='none';
+    popupblock.style.display='none';
+    document.querySelector('.pop-up-block .sec5__block').remove();
+ });
 
 
 

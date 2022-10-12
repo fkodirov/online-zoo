@@ -12,34 +12,36 @@
 </head>
 
 <body>
-        <header>
-            <div class="container header-container">
-            <div class="logo"><a href="/">
-                    <div class="logo__inner"><img src="assets/images/bamboo.svg" alt="bamboo">
-                        <h1 class="logo__text">PetStory online</h1>
-                    </div>
-                </a></div>
-            <nav class="menu">
-                <ul>
-                    <li><a href="https://rolling-scopes-school.github.io/fkodirov-JSFE2022Q3/online-zoo/">About</a></li>
-                    <li><a href="#">Map</a></li>
-                    <li><a href="#">Zoos</a></li>
-                    <li><a href="#">Donate</a></li>
-                    <li><a href="#">Contact us</a></li>
-                </ul>
-            </nav>
-            <div class="burger-lines">
-                <span class="line line1"></span>
-                <span class="line line2"></span>
-                <span class="line line3"></span>
-            </div> 
-            <div class="designed">
-                <span>
-                    <a href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-onlineDesigned by"> Designed by ©</a>
-                </span>
-            </div>
+    <header>
+        <div class="container header-container">
+        <div class="logo"><a href="https://rolling-scopes-school.github.io/fkodirov-JSFE2022Q3/online-zoo/">
+                <div class="logo__inner"><img src="assets/images/bamboo.svg" alt="bamboo">
+                    <h1 class="logo__text">PetStory online</h1>
+                </div>
+            </a></div>
+        <nav class="menu">
+            <ul>
+                <li><a href="https://rolling-scopes-school.github.io/fkodirov-JSFE2022Q3/online-zoo/">About</a></li>
+                <li><a href="#">Map</a></li>
+                <li><a href="#">Zoos</a></li>
+                <li><a href="https://rolling-scopes-school.github.io/fkodirov-JSFE2022Q3/online-zoo/donate.html">Donate</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </nav>
+        <div class="burger-lines">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+        </div> 
+
+        <div class="designed">
+            <span>
+                <a href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-onlineDesigned by"> Designed by ©</a>
+            </span>
         </div>
-        </header>
+        <span class="close-menu"></span>
+    </div>
+    </header>
             <div class="container bg"></div>
             <section class="donate-content">
                 <div class="container donate-content-container">
@@ -59,30 +61,30 @@
                 <div class="progress-bar">
                     <div class="progress-bar-bg">
                     <div class="dot-blocks">
-                        <div class="dot-block"><input type="radio" id="1" name="price"><label for="1"></label></div>
-                        <div class="dot-block"><input type="radio" id="2" name="price"><label for="2"></label></div>
-                        <div class="dot-block"><input type="radio" id="3" name="price"><label for="3"></label></div>
-                        <div class="dot-block"><input type="radio" id="4" name="price"><label for="4"></label></div>
-                        <div class="dot-block"><input type="radio" id="5" name="price"><label for="5"></label></div>
-                        <div class="dot-block"><input type="radio" id="6" name="price"><label for="6"></label></div>
-                        <div class="dot-block"><input type="radio" id="7" name="price"><label for="7"></label></div>
-                        <div class="dot-block"><input type="radio" id="8" name="price"><label for="8"></label></div>
+                        <div class="dot-block"><input type="radio" id="1" name="price" value="5000"><label for="1"></label></div>
+                        <div class="dot-block"><input type="radio" id="2" name="price" value="2000"><label for="2"></label></div>
+                        <div class="dot-block"><input type="radio" id="3" name="price" value="1000"><label for="3"></label></div>
+                        <div class="dot-block"><input type="radio" id="4" name="price" value="500"><label for="4"></label></div>
+                        <div class="dot-block"><input type="radio" id="5" name="price" value="250"><label for="5"></label></div>
+                        <div class="dot-block"><input type="radio" id="6" name="price" value="100" checked="checked"><label for="6"></label></div>
+                        <div class="dot-block"><input type="radio" id="7" name="price" value="50"><label for="7"></label></div>
+                        <div class="dot-block"><input type="radio" id="8" name="price" value="25"><label for="8"></label></div>
                     </div>
                         <span class="bar-line"></span>
                     </div>
                 </div>
                 <div class="price-blocks">
-                    <div class="price-block">5000</div>
-                    <div class="price-block">2000</div>
-                    <div class="price-block">1000</div>
-                    <div class="price-block">500</div>
-                    <div class="price-block">250</div>
-                    <div class="price-block">100</div>
-                    <div class="price-block">50</div>
-                    <div class="price-block">25</div>
+                    <div class="price-block" data="5000">5000</div>
+                    <div class="price-block" data="2000">2000</div>
+                    <div class="price-block" data="1000">1000</div>
+                    <div class="price-block" data="500">500</div>
+                    <div class="price-block" data="250">250</div>
+                    <div class="price-block" data="100">100</div>
+                    <div class="price-block" data="50">50</div>
+                    <div class="price-block" data="25">25</div>
                 </div>
                 <div class="input-block">
-                    <input type="text" placeholder="Another amount"/>
+                    <input id="inputprice" type="number" maxlength="4" max="9999" value="100" placeholder="Another amount"/>
                 </div>    
                 <div class="radio__button">
                     <input type="radio" class="radio__mark" name="choice" id="monthly">
@@ -138,7 +140,8 @@
             </div>
         </div>
         </section>
-        <script>alert("Здраствуейте! Нахожусь на работе, поэтому чуток не успеваю, если можно проверьте завтра, заранее спасибо!")</script>         
-</body>
+        <div class="pop-up-container"></div>
+         <script type="text/javascript" src="script2.js"></script>
+    </body>
 
 </html>
