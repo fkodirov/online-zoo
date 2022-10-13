@@ -1394,6 +1394,66 @@ color: #FFFFFF;
         margin-bottom: 2.5px;
         background: #FFFFFF;
     }
+
+    header.active{
+        height: 329px;
+        background: #FFFFFF;
+    }
+    header.active .logo {
+        width: 65.93px;
+        height: 43.03px;
+        top: 10px;
+        left: 10px;
+    }
+    header.active .logo__inner {
+        border: 1px solid #FE9013;
+        border-radius: 2px;
+        width: 65.6px;
+        height: 41.6px;
+    }
+    header.active .menu{
+        display: block;
+        margin-left: 10px;
+        padding-top: 82px;
+    }
+    header.active .logo__inner>img{
+        width: 5.6px;
+        height: 16.79px;
+        left: 13.48px;
+        top: 17.99px;
+    }
+    header.active .logo__text{
+        font-size: 15.2px;
+        color: #FE9013;
+    }
+    header.active .menu{
+        display: block;
+        margin-left: 10px;
+        padding-top: 82px;
+    }
+    header.active nav>ul{
+        flex-direction: column;
+        grid-gap: 14px;
+    }
+    header.active a{
+        color: #333B41;
+    }
+    header.active a:hover{
+        color: #FE9013;
+    }
+
+    header.active .burger-lines{
+        display: none;
+    }
+    header.active .designed{
+        display: block;
+        left: 10px;
+        top: 267px;
+    }
+    header.active .close-menu{
+            display: block;
+    }
+    
     .fav-animal {
         height: 339px;
         padding-top: 34px;
